@@ -1,0 +1,73 @@
+:root {
+  --primary-color: #3f51b5;
+  --primary-light: #757de8;
+  --primary-dark: #002984;
+  --secondary-color: #f50057;
+  --text-light: #ffffff;
+  --text-dark: #212121;
+  --background-light: #f5f5f5;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-light);
+}
+
+.navbar {
+  background-color: var(--primary-color);
+}
+
+.navbar-brand {
+  color: var(--text-light);
+  font-weight: bold;
+}
+
+.nav-link {
+  color: var(--text-light);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.form-control:focus {
+  border-color: var(--primary-light);
+  box-shadow: 0 0 0 0.25rem rgba(63, 81, 181, 0.25);
+}
+
+.question-list-empty {
+  text-align: center;
+  padding: 50px;
+  color: #6c757d;
+}
+
+.question-card {
+  border-left: 4px solid var(--primary-color);
+}
+
+.no-questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  text-align: center;
+} 
